@@ -25,8 +25,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
       res.status(200).json({ id: session.id });
     } catch (err) {
-      console.error(err); // log the error to the server console
-      res.status(500).json({ error: err.message }); // send the error message to the client
+      const error = err as Error;
+      console.error(error); // log the error to the server console
+      res.status(500).json({ error: error.message }); // send the error message to the client
     }
   } else {
     res.setHeader('Allow', 'POST');

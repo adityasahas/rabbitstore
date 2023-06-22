@@ -1,7 +1,11 @@
 import { Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, NumberInput, NumberInputField } from "@chakra-ui/react";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { loadStripe } from "@stripe/stripe-js";
 import { useState } from "react";
+
+interface ErrorResponse {
+  error: string;
+}
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY as string, {
   apiVersion: '2022-11-15',
@@ -24,7 +28,8 @@ const BuyButton: React.FC<{ priceId: string }> = ({ priceId }) => {
         console.error(result.error.message);
       }
     } catch (error) {
-      console.error(error.response.data.error);
+      const axiosError = error as AxiosError<ErrorResponse>;
+      console.error(axiosError.response?.data.error);
     }
   };
 
