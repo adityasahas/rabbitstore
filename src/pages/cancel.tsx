@@ -5,7 +5,7 @@ const CancelPage: React.FC = () => (
     <Heading as="h2" size="xl" mb="2">
       Payment Failed
     </Heading>
-    <Text fontSize="lg">Your payment was not successful. Please try again.</Text>
+    <Text fontSize="lg">Your payment was not successful. Please try again. <a href="/"><u>Return to home</u></a></Text>
   </Box>
 );
 
