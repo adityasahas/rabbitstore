@@ -41,11 +41,18 @@ export default function Home() {
       <ProductDisplay />
       <Container maxW="container.xl" py={12}>
         <Heading as="h2" size="xl" mb={5}>
-          About Youth Ag Business
+          About Us
         </Heading>
         <Text fontSize="lg" mb={10}>
-          Our Youth Ag Business Group is a group of 4-H and FFA members who are
-        </Text>
+        Maxx Muldoon, a passionate and dedicated
+young rabbit breeder, has achieved remarkable
+success in his endeavor. Through meticulous
+breeding techniques, unwavering commitment,
+and a deep love for his rabbits, he has produced
+a remarkable line of prize-winning meat rabbits.
+Recognizing the value of his accomplishments,
+Maxx is eager to share his achievements and the
+incredible quality of his rabbits with others.        </Text>
         <Divider mb={10}/>
         <Center>
         <Heading  mb={10} as="h3" size="lg">

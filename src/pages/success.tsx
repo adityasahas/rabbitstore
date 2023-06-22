@@ -6,6 +6,7 @@ const SuccessPage: React.FC = () => (
       Payment Successful
     </Heading>
     <Text fontSize="lg">Thank you for your purchase!</Text>
+    <Text fontSize="lg">To pickup your meat, contact Maxx Muldoon at (559) 530 - 5953 and present your receipt sent to your email to him.</Text>
   </Box>
 );
 

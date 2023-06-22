@@ -4,9 +4,9 @@ import Navbar from "../components/navbar";
 
 const BuyPage: React.FC = () => {
   // Stripe price IDs
-  const priceId1 = "price_1NLau7FfTf4uUx5IkMwUtIFR"; 
-  const priceId2 = "price_1NLau7FfTf4uUx5IUILJxGDy";
-  const priceId3 = "price_1NLau7FfTf4uUx5ICstcwEBP"; 
+  const priceId1 = "price_1NLZstFfTf4uUx5I4jHSlqw3"; 
+  const priceId2 = "price_1NLbdmFfTf4uUx5IvFuSIoGs";
+  const priceId3 = "price_1NLbe2FfTf4uUx5Io5hiM3pN"; 
 
   return (
     <Flex flexDirection="column" minH="100vh">
