@@ -20,7 +20,7 @@ export default function Navbar() {
                 justify="space-between"
             >
                 <Box>
-                    <Text fontSize="3xl">Maxx&apos;s Meat</Text>
+                    <Text fontSize="3xl">Maxx&apos;s Rabbit Meat</Text>
                 </Box>
                 <Flex   align="center">
                     <Button as="a" href='/' mr={4}>Home</Button>
