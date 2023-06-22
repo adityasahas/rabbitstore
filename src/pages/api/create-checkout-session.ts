@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
 });
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const { priceId } = req.body;
+  const { priceId, quantity } = req.body;
 
   if (req.method === 'POST') {
     try {
@@ -15,8 +15,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         line_items: [
           {
             price: priceId,
+            quantity: quantity,
           },
-          
         ],
         mode: 'payment',
         success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,

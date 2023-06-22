@@ -30,7 +30,7 @@ export default function Home() {
       >
         <VStack spacing={8} align="center">
           <Heading size="2xl" color={useColorModeValue("white", "gray.800")}>
-            Maxx &apos; s Meats
+            Maxx&apos;s Meats
           </Heading>
           <Text fontSize="xl" color={useColorModeValue("white", "gray.300")}>
             Support your local Youth Ag Business

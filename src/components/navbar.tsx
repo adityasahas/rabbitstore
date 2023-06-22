@@ -22,8 +22,8 @@ export default function Navbar() {
                 <Box>
                     <Text fontSize="3xl">Maxx&apos;s Meat</Text>
                 </Box>
-                <Flex align="center">
-                    <Button mr={4}>Home</Button>
+                <Flex   align="center">
+                    <Button as="a" href='/' mr={4}>Home</Button>
                     <Button colorScheme="green" as="a" href='/BuyPage' >Buy Now</Button>
                 </Flex>
             </Flex>
